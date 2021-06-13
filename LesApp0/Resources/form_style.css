@@ -70,9 +70,8 @@ div {
     border-radius: 1em;
     background-color: #FF6F28;
     color: #2F2E2A;
-    margin: 1em auto;
+    margin: 1em 1em;
     padding: 0;
-    
 }
 
 #send:hover{

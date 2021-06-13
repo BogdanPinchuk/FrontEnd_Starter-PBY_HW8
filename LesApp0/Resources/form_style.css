@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EEF3FA;
+}
+
+main {
+    margin: 0 auto 0;
+    padding: 0;
+    width: 410px;
+}
+
+section {
+    margin: 50px auto;
+    padding: 0;
+}
+
+div {
+    padding: 0;
+    margin: 15px 0;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+/* login and password -> lp */
+
+#lp_label {
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    margin-right: 1em;
+    color: #FF6F28;
+    text-shadow: 1px 1px 3px #2F2E2A;
+}
+
+#lp, #lp:focus {
+    height: 2em;
+    width: 20em;
+    text-indent: 1.5em;
+    border-radius: 1em;
+    border-color: #FF6F28;
+    box-shadow: 2px 2px 5px #FF6F28;
+    color: #2F2E2A;
+    /* Delete 2-nd border */
+    outline-style: none;
+}
+
+#lic {
+    /* padding: 0; */
+    margin: 0 13em 0 0;
+    align-self: center;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #FF6F28;
+}
+
+[placeholder] {
+    font-style: italic;
+}
+
+#send{
+    height: 2em;
+    width: 15em;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 1em;
+    background-color: #FF6F28;
+    color: #2F2E2A;
+    margin: 1em auto;
+    padding: 0;
+    
+}
+
+#send:hover{
+    box-shadow: 2px 2px 10px #FF6F28;
+    cursor: pointer;
+}

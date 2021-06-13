@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Bohdadn Pinchuk" />
+    <meta name="copyright" content="Bohdadn Pinchuk" />
+    <title>Дополнительное задание</title>
+    <!-- Задание
+    Создайте форму с двумя полями, в которые можно будет ввести логин и пароль пользователя и нажав на кнопку отправить
+    данные на сервер. -->
+
+    <link rel="stylesheet" href="Resources/form_style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="index.html" method="POST" enctype="application/x-www-form-urlencoded">
+                <div>
+                    <!-- For input login -->
+                    <label for="login" id="lp_label">Login: </label>
+                    <!-- help information: https://stackoverflow.com/questions/12018245/regular-expression-to-validate-username -->
+                    <input type="text" id="lp" name="login" placeholder="Enter your login:" required
+                        pattern="^(?=.{4,28}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$">
+                </div>
+
+                <div>
+                    <!-- For input password  -->
+                    <label for="pass" id="lp_label">Password: </label>
+                    <!-- help information: https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a -->
+                    <input type="password" id="lp" name="pass" placeholder="Enter your password:" required
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{4,}$"">
+                </div>
+
+                <div>
+                    <!-- For accept licence -->
+                    <label for=" lic" id="lp_label">Accept licence?</label>
+                    <input type="checkbox" name="al" id="lic">
+                </div>
+
+                <div>
+                    <input type="submit" name="sent" id="send" value="Send...">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
